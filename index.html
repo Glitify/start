@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Glitify - создание в процессе</title>
+    <link href="https://fonts.cdnfonts.com/css/google-sans" rel="stylesheet">
     <style>
         body {
-            font-family: 'Arial', sans-serif; /* Шрифт, близкий к системному */
+            font-family: 'Google Sans', sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(120deg, #7f00ff 0%, #6200ea 100%); /* Фиолетовый градиент */
-            color: #ffffff; /* Белый текст для контраста */
+            background: linear-gradient(120deg, #7f00ff 0%, #6200ea 100%);
+            color: #ffffff;
             line-height: 1.7;
         }
         .container {
@@ -19,81 +20,77 @@
             max-width: 800px;
             margin: 50px auto;
             padding: 30px;
-            background-color: rgba(100, 0, 200, 0.85); /* Полупрозрачный фиолетовый фон */
+            background-color: rgba(100, 0, 200, 0.85);
             border-radius: 12px;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); /* Глубокая тень */
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
             text-align: center;
         }
         h1 {
             font-size: 2.8em;
-            color: #e0c2ff; /* Светло-фиолетовый заголовок */
+            color: #e0c2ff;
             margin-bottom: 25px;
             text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
         }
         h2 {
             font-size: 1.8em;
-            color: #d500f9; /* Яркий фиолетовый подзаголовок */
+            color: #d500f9;
             margin-top: 30px;
             margin-bottom: 15px;
         }
         p {
             font-size: 1.05em;
             margin-bottom: 20px;
-            text-align: left; /* Выравнивание текста по левому краю */
+            text-align: left;
         }
         .feature-list {
-            list-style: none; /* Убираем стандартные маркеры списка */
+            list-style: none;
             padding: 0;
             margin-top: 20px;
-            display: inline-block; /* Центрирование списка */
+            display: inline-block;
             text-align: left;
         }
         .feature-list li {
-            background-color: #8c2fbc; /* Фон для пунктов списка */
+            background-color: #8c2fbc;
             padding: 10px 15px;
             margin-bottom: 10px;
             border-radius: 8px;
             box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
-            transition: background-color 0.3s ease; /* Плавный переход при наведении */
+            transition: background-color 0.3s ease;
         }
         .feature-list li:hover {
-            background-color: #a140cc; /* Цвет при наведении */
+            background-color: #a140cc;
         }
         footer {
             margin-top: 50px;
             padding: 15px;
             font-size: 0.85em;
-            color: #c5cae9; /* Светло-серый цвет для футера */
+            color: #c5cae9;
         }
-
-        /* Стили для кнопки-ссылки */
         .button-link {
-            display: inline-block; /* Позволяет задавать размеры и отступы */
-            padding: 12px 25px; /* Внутренние отступы */
-            background-color: #ffffff; /* Белый фон */
-            color: #6200ea; /* Фиолетовый цвет текста */
-            font-family: 'Arial', sans-serif; /* Шрифт */
-            font-size: 16px; /* Размер шрифта */
-            text-decoration: none; /* Убираем подчеркивание */
-            border: 2px solid #6200ea; /* Фиолетовая рамка */
-            border-radius: 8px; /* Скругленные углы */
-            cursor: pointer; /* Меняет курсор при наведении */
-            transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Плавные переходы */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень */
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #ffffff;
+            color: #6200ea;
+            font-family: 'Google Sans', sans-serif;
+            font-size: 16px;
+            text-decoration: none;
+            border: 2px solid #6200ea;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-
         .button-link:hover {
-            background-color: #6200ea; /* Фиолетовый фон при наведении */
-            color: #ffffff; /* Белый текст при наведении */
-            border-color: #ffffff; /* Белая рамка при наведении */
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Более выраженная тень */
-        }
-
-        .button-link:active {
-            background-color: #3f00b3; /* Темный фиолетовый при нажатии */
+            background-color: #6200ea;
             color: #ffffff;
             border-color: #ffffff;
-            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2); /* Внутренняя тень */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        .button-link:active {
+            background-color: #3f00b3;
+            color: #ffffff;
+            border-color: #ffffff;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
@@ -117,7 +114,6 @@
 
         <p>
             Glitify создан, чтобы вдохновить тебя на новые креативные свершения. Открой для себя бесконечные возможности и создавай свои собственные шедевры в этом ярком мире!
-            <!-- Ссылка оформлена как кнопка -->
             <a href="https://github.com/Glitify" class="button-link" target="_blank" rel="noopener noreferrer">
                 Присоединиться
             </a>
